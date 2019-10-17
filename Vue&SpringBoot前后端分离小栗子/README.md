@@ -1,7 +1,3 @@
----
-typora-root-url: images
----
-
 ### Quick Start
 
 **1**.这个小栗子的功能是增删改查员工、部门，多对一。
@@ -10,19 +6,19 @@ typora-root-url: images
 
 **3**.将后端项目 demo 导入 IDEA（导入后有可能需要先解决一些环境问题），然后进入 terminal 面板，接着进入项目的根目录 demo，进入子目录 target，执行下面的命令运行项目：
 
-![](/runDemo.png)
+![](images/runDemo.png)
 
 demo 的端口为 8080。
 
 **4**.将前端项目 vue_helloworld 导入 IDEA，同样地进入 terminal 面板，进入项目根目录 vue_helloworld，执行下面的命令运行项目：
 
-![](/runVue.png)
+![](images/runVue.png)
 
 vue_helloworld 的端口为 8090。
 
 **5**.在浏览器中访问 vue_helloworld 项目首页，点击【添加员工】，若弹出提示【成功】，则可以在数据库中查询到刚刚添加成功的员工信息。
 
-![](/indexPage.png)
+![](images/indexPage.png)
 
 如果前端项目启动失败，请接着往下看。
 
@@ -113,3 +109,21 @@ vue -help # vue help命令
   ```
 
 - 不知道为啥，vue_helloworld 用 8081 端口不行，改成 8090 端口就可以了。
+
+### demo 项目 application.yml 文件
+
+```yaml
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/demo
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+```
+
