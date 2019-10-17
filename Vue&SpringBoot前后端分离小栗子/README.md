@@ -110,7 +110,7 @@ vue -help # vue help 命令
 
 - 不知道为啥，vue_helloworld 用 8081 端口不行，改成 8090 端口就可以了。
 
-### demo 项目 application.yml 文件
+### demo 项目的 application.yml 文件
 
 ```yaml
 spring:
