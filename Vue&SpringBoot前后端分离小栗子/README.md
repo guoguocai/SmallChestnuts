@@ -27,12 +27,12 @@ vue_helloworld 的端口为 8090。
 要想运行 vue 项目，则需要一个能够运行 vue 项目的环境，所以首先我们就得检查 vue 的环境是否已装好，相关的命令：
 
 ```shell
-node -v # 查看node版本
-npm -V # 查看npm版本
-cnpm -v # 查看cnpm版本
-vue -V # 查看vue版本
-yarn -V # 查看yarn版本
-vue -help # vue help命令
+node -v # 查看 node 版本
+npm -V # 查看 npm 版本
+cnpm -v # 查看 cnpm 版本
+vue -V # 查看 vue 版本
+yarn -V # 查看 yarn 版本
+vue -help # vue help 命令
 ```
 
 如果没装，从安装 node.js 开始，具体的安装步骤可参考下面这篇文章（非常详细，耐心的一步一步照做即可）：
