@@ -34,7 +34,7 @@ AOP 代理是 AOP 框架所生成的对象，该对象是目标对象的代理�
 
 首先来看一眼项目的结构：
 
-![](images\projectStructure.png)
+![](images/projectStructure.png)
 
 基本还是按照 MVC 设计模式来分包的：
 
@@ -45,10 +45,10 @@ AOP 代理是 AOP 框架所生成的对象，该对象是目标对象的代理�
 
 用 rest client 发请求测试接口：
 
-![](images\apiTest.png)
+![](images/apiTest.png)
 
 
 
 控制台打印结果：
 
-![](images\consoleResult.png)
+![](images/consoleResult.png)
