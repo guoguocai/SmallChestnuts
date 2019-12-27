@@ -28,7 +28,7 @@ Windows MongoDB 环境安装步骤：<br/>网址：https://www.cnblogs.com/fuwen
 
   返回：（The operation returns a document that contains the acknowledgement indicator（确认指示器） and an array that contains the _id of each successfully inserted documents.）
 
-  ![insertCollectionReturn](shortcut\insertCollectionReturn.png)
+  ![insertCollectionReturn](shortcut/insertCollectionReturn.png)
   
 - 2.5 查询集合：**db.inventory.find({})**
 
@@ -50,7 +50,7 @@ Windows MongoDB 环境安装步骤：<br/>网址：https://www.cnblogs.com/fuwen
 
   db.inventory.find( { tags: [ "red", "blank" ] } )
 
-  ![queryFilter](shortcut\queryFilter.png)
+  ![queryFilter](shortcut/queryFilter.png)
 
 - 2.8 只返回指定的字段集合：
 
@@ -58,7 +58,7 @@ Windows MongoDB 环境安装步骤：<br/>网址：https://www.cnblogs.com/fuwen
 
   db.inventory.find( {}, { _id: 0, item: 1, status: 1 } ); // 将 _id 字段从返回的集合中排除（只需将其指定为 0 即可）
 
-  ![specifyField](shortcut\specifyField.png)
+  ![specifyField](shortcut/specifyField.png)
 
 ### 3. Aggregation 的使用
 
@@ -77,7 +77,7 @@ db.orders.aggregate([
 
 $match 阶段帮我们**过滤出集合中 status 等于 A 的文档**（documents），$group 阶段会帮我们对 $match 阶段过滤出的结果**按照 cust_id 分组**，并且多个相同 cust_id 下的 amount 会累加求和，返回最终结果。如下图：
 
-![pipeline](shortcut\pipeline.png)
+![pipeline](shortcut/pipeline.png)
 
 从中可以看出聚合管道的基本功能就包括**过滤查询结果**和**转换文档的输出格式**。
 
@@ -85,7 +85,7 @@ $match 阶段帮我们**过滤出集合中 status 等于 A 的文档**（documen
 
 从名字就能看出 Map-Reduce 也分两个阶段，map 阶段用于**发表（emit）一个或多个对象**，文字描述不太好理解，看下面的图会好点；reduce 阶段就是**把 map 阶段输出的结果联合起来**，同样也是看图会好理解一点。好了，看图：
 
-![mapReduce](shortcut\mapReduce.png)
+![mapReduce](shortcut/mapReduce.png)
 
 可以发现，map-reduce 跟其他的聚合操作一样，也**可以指定查询条件和对结果进行分类**。比较特殊的是，map 和 reduce 操作用的是自定义的 JavaScript 函数。跟聚合管道相比，map-reduce 更加灵活，但是比较低效，也比较复杂。
 
@@ -125,7 +125,7 @@ mongoDB 提供的针对单一集合的聚合操作，例如：
 
 举例如下：
 
-![single](shortcut\single.png)
+![single](shortcut/single.png)
 
 ### 4. mongoDB CRUD 操作
 
